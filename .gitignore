@@ -1,0 +1,22 @@
+# Angular / Node
+node_modules/
+dist/
+.angular/
+coverage/
+
+# .NET build outputs
+**/bin/
+**/obj/
+.vs/
+
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+**/secrets.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
