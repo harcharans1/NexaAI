@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Global reset: remove browser's default white margins */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #090b14;
+}
+
+html {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  color: #edf0ff;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+app-root {
+  display: block;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  max-width: 100%;
+}

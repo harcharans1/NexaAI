@@ -1,0 +1,130 @@
+
+<div class="signup-page">
+  <section class="signup-panel">
+    <a class="brand" routerLink="/">
+      <span class="brand-mark">N</span>
+      <span>Nexa<span class="brand-accent">AI</span></span>
+    </a>
+
+    <div class="signup-intro">
+      <span class="eyebrow">START YOUR NEXT CHAPTER</span>
+      <h1>Build a smarter<br />way to work<span>.</span></h1>
+      <p>
+        Bring your business workflows together and explore the possibilities
+        of an AI-powered workspace.
+      </p>
+
+      <div class="signup-illustration" aria-hidden="true">
+        <div class="signup-orbit orbit-a"></div>
+        <div class="signup-orbit orbit-b"></div>
+        <div class="signup-cube">N</div>
+        <span class="signup-star star-a">✦</span>
+        <span class="signup-star star-b">✧</span>
+      </div>
+
+      <div class="signup-benefits">
+        <p><span>✓</span> A dedicated business workspace</p>
+        <p><span>✓</span> Organised tools and workflows</p>
+        <p><span>✓</span> A simple place to get started</p>
+      </div>
+    </div>
+
+    <small class="panel-note">NexaAI · Your business, organised.</small>
+  </section>
+
+  <section class="signup-form-panel">
+    <div class="signup-form-wrap">
+      <a class="brand mobile-brand" routerLink="/">
+        <span class="brand-mark">N</span>
+        <span>Nexa<span class="brand-accent">AI</span></span>
+      </a>
+
+      <div class="form-heading">
+        <span class="eyebrow">CREATE YOUR WORKSPACE</span>
+        <h2>Create your account</h2>
+        <p>Start with your details. You can set up your workspace next.</p>
+      </div>
+
+      <form (ngSubmit)="onSubmit()" #signupForm="ngForm">
+        <label for="full-name">Full name</label>
+        <input
+          id="full-name"
+          name="fullName"
+          [(ngModel)]="fullName"
+          placeholder="John Doe"
+          autocomplete="name"
+          required />
+
+        <label for="business-email">Business email</label>
+        <input
+          id="business-email"
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="you@company.com"
+          autocomplete="email"
+          required
+          email />
+
+        <label for="business-name">Business name</label>
+        <input
+          id="business-name"
+          name="businessName"
+          [(ngModel)]="businessName"
+          placeholder="Your business"
+          autocomplete="organization"
+          required />
+
+        <label for="signup-password">Password</label>
+        <div class="password-input">
+          <input
+            id="signup-password"
+            [type]="showPassword ? 'text' : 'password'"
+            name="password"
+            [(ngModel)]="password"
+            placeholder="At least 8 characters"
+            autocomplete="new-password"
+            minlength="8"
+            required />
+          <button
+            type="button"
+            (click)="showPassword = !showPassword">
+            {{ showPassword ? 'Hide' : 'Show' }}
+          </button>
+        </div>
+
+        <label for="confirm-password">Confirm password</label>
+        <input
+          id="confirm-password"
+          type="password"
+          name="confirmPassword"
+          [(ngModel)]="confirmPassword"
+          placeholder="Re-enter your password"
+          autocomplete="new-password"
+          required />
+
+        <label class="terms-option">
+          <input type="checkbox" name="acceptedTerms" [(ngModel)]="acceptedTerms" />
+          <span>I agree to the <a routerLink="/help">terms and conditions</a>.</span>
+        </label>
+
+        @if (errorMessage) {
+          <p class="form-message" role="alert">{{ errorMessage }}</p>
+        }
+
+        <button class="submit-button" type="submit">
+          Create account <span>→</span>
+        </button>
+      </form>
+
+      <p class="login-prompt">
+        Already have an account?
+        <a routerLink="/login">Sign in</a>
+      </p>
+
+      <p class="security-note">
+        Account creation is a UI preview until backend registration is connected.
+      </p>
+    </div>
+  </section>
+</div>

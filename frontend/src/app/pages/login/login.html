@@ -1,0 +1,129 @@
+
+<div class="auth-page">
+  <section class="auth-brand-panel">
+    <a class="brand" routerLink="/">
+      <span class="brand-mark">N</span>
+      <span>Nexa<span class="brand-accent">AI</span></span>
+    </a>
+
+    <div class="brand-content">
+      <span class="eyebrow">YOUR AI BUSINESS WORKSPACE</span>
+      <h1>Welcome back<span>.</span></h1>
+      <p>
+        Bring your business conversations, tasks and workflows together
+        in one intelligent workspace.
+      </p>
+
+      <div class="illustration" aria-hidden="true">
+        <div class="illustration-orbit orbit-one"></div>
+        <div class="illustration-orbit orbit-two"></div>
+        <div class="robot">
+          <span class="robot-antenna"></span>
+          <div class="robot-head">
+            <div class="robot-eyes"><span></span><span></span></div>
+            <div class="robot-mouth"></div>
+          </div>
+          <div class="robot-body">
+            <span>✦</span>
+          </div>
+          <div class="robot-arm arm-left"></div>
+          <div class="robot-arm arm-right"></div>
+        </div>
+        <span class="sparkle sparkle-one">✦</span>
+        <span class="sparkle sparkle-two">✧</span>
+      </div>
+
+      <div class="benefits">
+        <p><span>✓</span> Organise your business workflows</p>
+        <p><span>✓</span> Keep important tasks in one place</p>
+        <p><span>✓</span> Explore your AI-powered workspace</p>
+      </div>
+    </div>
+
+    <p class="panel-footer">Smarter conversations. Better business.</p>
+  </section>
+
+  <section class="auth-form-panel">
+    <div class="auth-form-wrap">
+      <div class="mobile-brand">
+        <a class="brand" routerLink="/">
+          <span class="brand-mark">N</span>
+          <span>Nexa<span class="brand-accent">AI</span></span>
+        </a>
+      </div>
+
+      <div class="form-heading">
+        <span class="eyebrow">YOUR WORKSPACE AWAITS</span>
+        <h2>Sign in</h2>
+        <p>Enter your details to access your NexaAI workspace.</p>
+      </div>
+
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <label for="login-email">Email address</label>
+        <input
+          id="login-email"
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="you@company.com"
+          autocomplete="email"
+          required
+          email />
+
+        <div class="password-label">
+          <label for="login-password">Password</label>
+          <a routerLink="/forgot-password">Forgot password?</a>
+        </div>
+
+        <div class="password-input">
+          <input
+            id="login-password"
+            [type]="showPassword ? 'text' : 'password'"
+            name="password"
+            [(ngModel)]="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required />
+          <button
+            type="button"
+            class="show-password"
+            (click)="showPassword = !showPassword"
+            [attr.aria-label]="showPassword ? 'Hide password' : 'Show password'">
+            {{ showPassword ? 'Hide' : 'Show' }}
+          </button>
+        </div>
+
+        <label class="remember-option">
+          <input type="checkbox" name="rememberMe" [(ngModel)]="rememberMe" />
+          <span>Remember me</span>
+        </label>
+
+        @if (errorMessage) {
+          <p class="form-message" role="alert">{{ errorMessage }}</p>
+        }
+
+        <button class="submit-button" type="submit" [disabled]="isSubmitting">
+          Sign in <span>→</span>
+        </button>
+      </form>
+
+      <div class="form-divider"><span>OR CONTINUE WITH</span></div>
+
+      <div class="social-buttons">
+        <button type="button" (click)="errorMessage = 'Google sign-in is not configured yet.'">
+          <span class="google-mark">G</span> Google
+        </button>
+        <button type="button" (click)="errorMessage = 'Microsoft sign-in is not configured yet.'">
+          <span class="microsoft-mark">⊞</span> Microsoft
+        </button>
+      </div>
+
+      <p class="signup-prompt">
+        Don't have an account?
+        <a routerLink="/signup">Create account</a>
+      </p>
+
+      <p class="security-note">Your workspace access will be protected by account authentication once configured.</p>
+    </div>
+  </section>
+</div>

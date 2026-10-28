@@ -1,0 +1,155 @@
+
+:host {
+  display: block;
+  min-width: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 25px 16px 16px;
+  background: #0c0e19;
+  color: #edf0ff;
+  border-right: 1px solid #25283a;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 7px;
+  color: #f5f3ff;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 750;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #a78bfa, #6845db);
+}
+
+.brand-ai {
+  color: #ad9aff;
+}
+
+.section-label {
+  margin: 42px 10px 13px;
+  color: #717791;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+.nav-list {
+  display: grid;
+  gap: 7px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  color: #979db8;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 160ms ease;
+}
+
+.nav-link:hover {
+  background: #181a2b;
+  color: white;
+}
+
+.nav-link.active {
+  color: #ded5ff;
+  border-color: #7861c83d;
+  background: linear-gradient(100deg, #8b5cf62d, #8b5cf60a);
+}
+
+.nav-icon {
+  width: 22px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding-top: 30px;
+}
+
+.upgrade-card {
+  padding: 15px 12px;
+  border: 1px solid #42345e;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #1b172c, #111220);
+}
+
+.upgrade-icon {
+  color: #c9b7ff;
+  font-size: 23px;
+}
+
+.upgrade-card h3 {
+  margin: 10px 0 6px;
+  font-size: 13px;
+}
+
+.upgrade-card p {
+  color: #9992b0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.upgrade-card a {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #594583;
+  border-radius: 7px;
+  color: #d8ccff;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.user-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 17px;
+  padding-top: 16px;
+  border-top: 1px solid #292b3d;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  background: linear-gradient(135deg, #7555cb, #30264c);
+}
+
+.user-details {
+  display: grid;
+  gap: 4px;
+}
+
+.user-details strong {
+  font-size: 11px;
+}
+
+.user-details span {
+  color: #858ba5;
+  font-size: 10px;
+}

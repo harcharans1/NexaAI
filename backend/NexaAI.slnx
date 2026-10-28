@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NexaAI.Application/NexaAI.Application.csproj" />
+    <Project Path="src/NexaAI.Domain/NexaAI.Domain.csproj" />
+    <Project Path="src/NexaAI.Infrastructure/NexaAI.Infrastructure.csproj" />
+    <Project Path="src/NexaAI.WebApi/NexaAI.WebApi.csproj" />
+  </Folder>
+</Solution>

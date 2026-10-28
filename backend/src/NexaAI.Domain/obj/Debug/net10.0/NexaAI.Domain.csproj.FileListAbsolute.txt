@@ -1,0 +1,11 @@
+B:\projects\NexaAI\backend\src\NexaAI.Domain\bin\Debug\net10.0\NexaAI.Domain.deps.json
+B:\projects\NexaAI\backend\src\NexaAI.Domain\bin\Debug\net10.0\NexaAI.Domain.dll
+B:\projects\NexaAI\backend\src\NexaAI.Domain\bin\Debug\net10.0\NexaAI.Domain.pdb
+B:\projects\NexaAI\backend\src\NexaAI.Domain\obj\Debug\net10.0\NexaAI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+B:\projects\NexaAI\backend\src\NexaAI.Domain\obj\Debug\net10.0\NexaAI.Domain.AssemblyInfoInputs.cache
+B:\projects\NexaAI\backend\src\NexaAI.Domain\obj\Debug\net10.0\NexaAI.Domain.AssemblyInfo.cs
+B:\projects\NexaAI\backend\src\NexaAI.Domain\obj\Debug\net10.0\NexaAI.Domain.csproj.CoreCompileInputs.cache
+B:\projects\NexaAI\backend\src\NexaAI.Domain\obj\Debug\net10.0\NexaAI.Domain.dll
+B:\projects\NexaAI\backend\src\NexaAI.Domain\obj\Debug\net10.0\refint\NexaAI.Domain.dll
+B:\projects\NexaAI\backend\src\NexaAI.Domain\obj\Debug\net10.0\NexaAI.Domain.pdb
+B:\projects\NexaAI\backend\src\NexaAI.Domain\obj\Debug\net10.0\ref\NexaAI.Domain.dll

@@ -1,0 +1,59 @@
+
+<header class="public-header">
+  <a class="brand" routerLink="/" (click)="closeMenu()">
+    <span class="brand-mark">N</span>
+    <span>Nexa<span class="brand-accent">AI</span></span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="mobileMenuOpen"
+    aria-label="Toggle navigation">
+    {{ mobileMenuOpen ? '✕' : '☰' }}
+  </button>
+
+  <nav class="main-nav" [class.nav-open]="mobileMenuOpen">
+    <a routerLink="/features" routerLinkActive="nav-active"
+       (click)="closeMenu()">Products</a>
+    <a routerLink="/solutions" routerLinkActive="nav-active"
+       (click)="closeMenu()">Solutions</a>
+    <a routerLink="/pricing" routerLinkActive="nav-active"
+       (click)="closeMenu()">Pricing</a>
+    <a routerLink="/blog" routerLinkActive="nav-active"
+       (click)="closeMenu()">Resources</a>
+
+    <div class="mobile-actions">
+      <a class="sign-in" routerLink="/login" (click)="closeMenu()">Sign in</a>
+      <a class="get-started" routerLink="/signup" (click)="closeMenu()">Get Started ↗</a>
+    </div>
+  </nav>
+
+  <div class="desktop-actions">
+    <a class="sign-in" routerLink="/login">Sign in</a>
+    <a class="get-started" routerLink="/signup">Get Started ↗</a>
+  </div>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="public-footer">
+  <a class="brand footer-brand" routerLink="/">
+    <span class="brand-mark">N</span>
+    <span>Nexa<span class="brand-accent">AI</span></span>
+  </a>
+
+  <p>Smarter conversations. Better business.</p>
+
+  <div class="footer-links">
+    <a routerLink="/features">Features</a>
+    <a routerLink="/pricing">Pricing</a>
+    <a routerLink="/blog">Resources</a>
+    <a routerLink="/help">Support</a>
+  </div>
+
+  <span class="copyright">© 2026 NexaAI. All rights reserved.</span>
+</footer>

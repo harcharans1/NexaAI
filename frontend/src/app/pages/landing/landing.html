@@ -1,0 +1,193 @@
+
+<section class="hero">
+  <div class="hero-glow glow-one"></div>
+  <div class="hero-glow glow-two"></div>
+
+  <div class="hero-copy">
+    <div class="announcement">
+      <span class="announcement-dot"></span>
+      YOUR AI-POWERED BUSINESS ASSISTANT
+      <span class="announcement-arrow">↗</span>
+    </div>
+
+    <h1>
+      Your 24/7 AI Employee
+      <br />
+      for Business <span class="gradient-text">Growth.</span>
+    </h1>
+
+    <p class="hero-description">
+      Automate customer conversations, manage appointments and organise
+      follow-ups with one intelligent business platform.
+    </p>
+
+    <div class="hero-actions">
+      <a class="button-primary" routerLink="/signup">
+        Get Started Free <span>→</span>
+      </a>
+      <a class="button-secondary" routerLink="/demo">
+        <span class="play-icon">▶</span> Watch Demo
+      </a>
+    </div>
+
+    <div class="trust-row">
+      <div class="avatar-stack" aria-hidden="true">
+        <span>A</span>
+        <span>M</span>
+        <span>J</span>
+        <span>S</span>
+      </div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <p>Built to make business workflows simpler</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="visual-orbit orbit-a"></div>
+    <div class="visual-orbit orbit-b"></div>
+
+    <div class="assistant-card">
+      <div class="assistant-header">
+        <div class="assistant-brand">
+          <span class="assistant-mark">N</span>
+          <div>
+            <strong>NexaAI Assistant</strong>
+            <small>Your business workspace</small>
+          </div>
+        </div>
+        <span class="live-indicator"><span></span> Ready</span>
+      </div>
+
+      <div class="assistant-body">
+        <div class="assistant-intro">
+          <span class="robot-orb">✧</span>
+          <div>
+            <h3>How can I help today?</h3>
+            <p>Your AI workspace is ready to explore.</p>
+          </div>
+        </div>
+
+        <div class="chat-message user-message">
+          Help me manage my next appointment.
+        </div>
+
+        <div class="chat-message ai-message">
+          <span class="message-icon">✦</span>
+          <div>
+            <strong>Here's how I can help</strong>
+            <p>Organise bookings, enquiries and follow-ups in one place.</p>
+          </div>
+        </div>
+
+        <div class="suggestion-row">
+          <span>Manage leads</span>
+          <span>Book appointments</span>
+        </div>
+      </div>
+
+      <div class="assistant-input">
+        <span>Ask NexaAI anything...</span>
+        <span class="send-icon">↑</span>
+      </div>
+      <p class="demo-note">Interactive preview concept · Not a live AI conversation</p>
+    </div>
+
+    <div class="floating-card floating-top">
+      <span class="floating-icon purple">✦</span>
+      <div><strong>AI workspace</strong><small>One place for your work</small></div>
+    </div>
+
+    <div class="floating-card floating-bottom">
+      <span class="floating-icon green">✓</span>
+      <div><strong>Stay organised</strong><small>Bookings and follow-ups</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section">
+  <div class="section-intro">
+    <span class="eyebrow">ONE PLATFORM, MORE POSSIBILITIES</span>
+    <h2>Everything your business needs<span>.</span></h2>
+    <p>Explore a connected toolkit designed to simplify everyday business tasks.</p>
+  </div>
+
+  <div class="services-grid">
+    @for (service of services; track service.title) {
+      <article class="service-card">
+        <div class="service-icon" [class]="service.color">
+          {{ service.icon }}
+        </div>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+        <a routerLink="/features" [attr.aria-label]="'Explore ' + service.title">
+          Explore feature <span>↗</span>
+        </a>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="solutions-section">
+  <div class="solutions-copy">
+    <span class="eyebrow">BUILT FOR YOUR WORKFLOW</span>
+    <h2>Less busywork.<br /><span>More meaningful growth.</span></h2>
+    <p>
+      Bring customer conversations, lead management and daily workflows
+      into a single workspace that helps your team stay organised.
+    </p>
+
+    <ul>
+      <li><span>✓</span> Keep customer enquiries organised</li>
+      <li><span>✓</span> Simplify booking and follow-up workflows</li>
+      <li><span>✓</span> Keep your business information accessible</li>
+    </ul>
+
+    <a class="button-primary" routerLink="/solutions">
+      Explore solutions <span>→</span>
+    </a>
+  </div>
+
+  <div class="workflow-card">
+    <div class="workflow-top">
+      <div>
+        <small>WORKSPACE OVERVIEW</small>
+        <h3>Your business, organised</h3>
+      </div>
+      <span class="workflow-dots">•••</span>
+    </div>
+
+    <div class="workflow-item">
+      <span class="workflow-icon violet">✉</span>
+      <div><strong>Customer enquiries</strong><small>Keep conversations together</small></div>
+      <span class="workflow-arrow">↗</span>
+    </div>
+    <div class="workflow-item">
+      <span class="workflow-icon blue">▦</span>
+      <div><strong>Appointments</strong><small>Keep your schedule organised</small></div>
+      <span class="workflow-arrow">↗</span>
+    </div>
+    <div class="workflow-item">
+      <span class="workflow-icon green">✓</span>
+      <div><strong>Follow-up tasks</strong><small>Keep next steps visible</small></div>
+      <span class="workflow-arrow">↗</span>
+    </div>
+
+    <div class="workflow-footer">
+      <span class="workflow-status"></span>
+      Workspace preview
+      <span>Demo data</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+  <h2>Make room for bigger ideas.</h2>
+  <p>Explore the NexaAI workspace and discover a smarter way to organise your work.</p>
+  <a class="button-primary" routerLink="/signup">
+    Get Started <span>→</span>
+  </a>
+  <small>Explore the platform before connecting your business.</small>
+</section>

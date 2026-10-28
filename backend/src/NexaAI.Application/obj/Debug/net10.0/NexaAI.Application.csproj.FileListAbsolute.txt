@@ -1,0 +1,15 @@
+B:\projects\NexaAI\backend\src\NexaAI.Application\bin\Debug\net10.0\NexaAI.Application.deps.json
+B:\projects\NexaAI\backend\src\NexaAI.Application\bin\Debug\net10.0\NexaAI.Application.dll
+B:\projects\NexaAI\backend\src\NexaAI.Application\bin\Debug\net10.0\NexaAI.Application.pdb
+B:\projects\NexaAI\backend\src\NexaAI.Application\bin\Debug\net10.0\NexaAI.Domain.dll
+B:\projects\NexaAI\backend\src\NexaAI.Application\bin\Debug\net10.0\NexaAI.Domain.pdb
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\NexaAI.Application.csproj.AssemblyReference.cache
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\NexaAI.Application.GeneratedMSBuildEditorConfig.editorconfig
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\NexaAI.Application.AssemblyInfoInputs.cache
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\NexaAI.Application.AssemblyInfo.cs
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\NexaAI.Application.csproj.CoreCompileInputs.cache
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\NexaAI.A.220BE02C.Up2Date
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\NexaAI.Application.dll
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\refint\NexaAI.Application.dll
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\NexaAI.Application.pdb
+B:\projects\NexaAI\backend\src\NexaAI.Application\obj\Debug\net10.0\ref\NexaAI.Application.dll
